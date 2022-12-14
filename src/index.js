@@ -1,1 +1,4 @@
-console.log("It's working with watch")
+import { test } from "./test.js"
+import "./styles.css"
+
+test()
