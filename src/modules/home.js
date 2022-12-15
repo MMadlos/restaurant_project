@@ -1,77 +1,76 @@
 //DOM Creation
+function newElement(element, textContent) {
+	const newElement = document.createElement(element)
+	if (element == "img") {
+		newElement.textContent = ""
+		return newElement
+	}
+	if (textContent) {
+		newElement.textContent = textContent
+	}
 
-function newP(text) {
-	const paragraph = document.createElement("p")
-	paragraph.textContent = text
-	return paragraph
+	return newElement
 }
 
-function newLi() {
-	const li = document.createElement("li")
-	return li
-}
-
-function newA(text, href, id) {
-	const a = document.createElement("a")
-	a.textContent = text
-	a.href = href
-	id ? (a.id = id) : ""
-
-	return a
-}
-
-function newDiv(text, id) {
-	const div = document.createElement("div")
-	div.textContent = text
-	id ? (div.id = id) : ""
-	return div
-}
-
-//HOME Creation
+//Page Creation
 
 const Nav = () => {
-	const nav = document.createElement("nav")
-	nav.setAttribute("id", "nav_wrapper")
+	const nav = newElement("nav")
+	nav.id = "nav_wrapper"
 
-	const logo = document.createElement("img")
+	const logo = newElement("img")
 	logo.src = "/src/images/logo.png"
 	logo.alt = "logo"
 
-	const ul = document.createElement("ul")
-	const inicio = newA("Inicio", "#")
-	const carta = newA("Carta", "#")
-	const conocenos = newA("Conócenos", "#")
+	const ul = newElement("ul")
 
-	ul.appendChild(newLi()).appendChild(inicio)
-	ul.appendChild(newLi()).appendChild(carta)
-	ul.appendChild(newLi()).appendChild(conocenos)
+	const inicio = newElement("a", "Inicio")
+	inicio.href = "#"
 
-	const icons = newDiv("", "icons")
-	icons.appendChild(newDiv("O"))
-	icons.appendChild(newDiv("O"))
+	const carta = newElement("a", "Carta")
+	carta.href = "#"
+
+	const conocenos = newElement("a", "Conócenos")
+	conocenos.href = "#"
+
+	ul.appendChild(newElement("li")).appendChild(inicio)
+	ul.appendChild(newElement("li")).appendChild(carta)
+	ul.appendChild(newElement("li")).appendChild(conocenos)
+
+	const icons = newElement("div")
+	icons.id = "icons"
+
+	icons.appendChild(newElement("p", "O"))
+	icons.appendChild(newElement("p", "O"))
 
 	nav.appendChild(logo)
 	nav.appendChild(ul)
 	nav.appendChild(icons)
 	return nav
 }
+const footer = () => {
+	const footer = newElement("footer")
 
-const heroImg = document.createElement("img")
-heroImg.src = "/src/images/FIKA.webp"
-heroImg.id = "hero_img"
+	footer.appendChild(newElement("p", "Contacto"))
+	footer.appendChild(newElement("p", "Calle Rubén Darío 36, 08030, Barcelona"))
+	footer.appendChild(newElement("p", "fikacoffeecorner@gmail.com"))
+	footer.appendChild(newElement("p", "fikacoffeebcn"))
 
-const footer = document.createElement("footer")
-footer.appendChild(newP("Contacto"))
-footer.appendChild(newP("Calle Rubén Darío 36, 08030, Barcelona"))
-footer.appendChild(newP("fikacoffeecorner@gmail.com"))
-footer.appendChild(newP("fikacoffeebcn"))
+	return footer
+}
 
 const Home = () => {
 	const home = document.getElementById("content")
 
+	const HeroImg = newElement("img", "test")
+	HeroImg.src = "/src/images/FIKA.webp"
+	HeroImg.id = "hero_img"
+
 	home.appendChild(Nav())
-	home.appendChild(heroImg)
-	home.appendChild(footer)
+	home.appendChild(HeroImg)
+	home.appendChild(footer())
+
+	return home
 }
 
 export { Home }
