@@ -11,13 +11,12 @@ const Nav = () => {
 	const ul = newElement("ul")
 
 	const inicio = newElement("a", "Inicio")
-	inicio.href = "#"
+	inicio.id = "inicio"
 
 	const carta = newElement("a", "Carta")
-	carta.href = "#"
+	carta.id = "carta"
 
 	const conocenos = newElement("a", "Conócenos")
-	// conocenos.href = "./modules/conocenos.js"
 	conocenos.id = "conocenos"
 
 	ul.appendChild(newElement("li")).appendChild(inicio)
@@ -47,11 +46,16 @@ const footer = () => {
 }
 
 const homeContent = () => {
+	const divMainContent = newElement("div")
+	divMainContent.id = "main_content"
+
 	const HeroImg = newElement("img", "test")
 	HeroImg.src = "/src/images/FIKA.webp"
 	HeroImg.id = "hero_img"
 
-	return HeroImg
+	divMainContent.appendChild(HeroImg)
+
+	return divMainContent
 }
 
 export { Nav, footer, homeContent }

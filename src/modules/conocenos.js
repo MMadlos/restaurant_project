@@ -2,6 +2,8 @@ import { newElement } from "./utilities.js"
 
 const Conocenos = () => {
 	const valores = newElement("div")
+	valores.id = "main_content"
+
 	const iconFilosofia = newElement("i")
 	const imgFilosofia = newElement("img")
 

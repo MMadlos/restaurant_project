@@ -2,21 +2,33 @@ import "./styles.css"
 import { Nav, footer, homeContent } from "./modules/home.js"
 import { Conocenos } from "./modules/conocenos.js"
 
+// Load default Home page
+const inicio = homeContent()
+const conocenos = Conocenos()
+
 const pageContent = document.getElementById("content")
-
 pageContent.appendChild(Nav())
+pageContent.appendChild(inicio)
+pageContent.appendChild(footer())
 
-// Cuando haga click en el enlace "Conócenos", quiero que se borre el contenido de Content y aparezca el contenido de "Conócenos"
-pageContent.appendChild(homeContent())
+// Load content from other tabs
 
+// tab "Conócenos"
 const tabConocenos = document.getElementById("conocenos")
-
 tabConocenos.addEventListener("click", () => {
-	const heroImg = document.getElementById("hero_img")
-	heroImg.remove()
-
-	const nav = document.getElementById("nav_wrapper")
-	nav.after(Conocenos())
+	loadContent(conocenos)
 })
 
-pageContent.appendChild(footer())
+// Tab Inicio
+const tabInicio = document.getElementById("inicio")
+tabInicio.addEventListener("click", () => {
+	loadContent(inicio)
+})
+
+function loadContent(sectionName) {
+	const mainContent = document.getElementById("main_content")
+	mainContent.remove()
+
+	const nav = document.getElementById("nav_wrapper")
+	nav.after(sectionName)
+}
