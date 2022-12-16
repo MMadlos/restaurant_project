@@ -55,12 +55,15 @@ const Conocenos = () => {
 
 	// KM
 	const kmContainer = newElement("div")
-	kmContainer.id = "kmContainer"
+	const kmContent = {
+		id: "kmContainer",
+		img: imgKM,
+		title: "KM 0",
+		text: "Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores",
+		parent: "kmContainer",
+	}
 
-	const kmTitle = "KM 0"
-	const kmText = "Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores"
-
-	createValueContent(imgKM, kmTitle, kmText, kmContainer)
+	createValueContent(kmContent, kmContainer)
 
 	valuesContainer.appendChild(filosofiaContainer)
 	valuesContainer.appendChild(familiaContainer)
@@ -69,10 +72,10 @@ const Conocenos = () => {
 	return main_content
 }
 
-function createValueContent(img, title, text, parent) {
-	const Icon = iconCreation(img)
-	const Title = newElement("h2", title)
-	const Text = newElement("p", text)
+function createValueContent(objectContent, parent) {
+	const Icon = iconCreation(objectContent["img"])
+	const Title = newElement("h2", objectContent["title"])
+	const Text = newElement("p", objectContent["text"])
 
 	parent.appendChild(Icon)
 	parent.appendChild(Title)
