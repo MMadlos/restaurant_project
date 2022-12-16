@@ -5,6 +5,11 @@ const ruleForStyles = {
 	use: ["style-loader", "css-loader"],
 }
 
+const ruleForImages = {
+	test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+	type: "asset/resource",
+}
+
 module.exports = {
 	entry: "./src/index.js",
 	output: {
@@ -12,6 +17,6 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
-		rules: [ruleForStyles],
+		rules: [ruleForStyles, ruleForImages],
 	},
 }

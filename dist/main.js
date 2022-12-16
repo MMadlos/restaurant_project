@@ -16,7 +16,7 @@
   \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* Reset */\\n\\n*,\\n*::before,\\n*::after {\\n\\tbox-sizing: border-box;\\n}\\n\\n* {\\n\\tmargin: 0;\\n\\tpadding: 0;\\n\\tfont: inherit;\\n}\\n\\nhtml {\\n\\tcolor-scheme: dark light;\\n}\\n\\nbody {\\n\\tmin-height: 100vh;\\n}\\n\\nimg,\\npicture,\\nsvg,\\nvideo,\\nfooter {\\n\\tdisplay: block;\\n\\tmax-width: 100%;\\n}\\n\\n/* Nav */\\nnav,\\nfooter,\\n#hero_img {\\n\\twidth: 100vw;\\n\\tpadding: 20px 40px;\\n\\n\\tborder: 1px solid red;\\n}\\n\\n#nav_wrapper {\\n\\tdisplay: flex;\\n\\tflex-direction: colum;\\n\\tjustify-content: space-between;\\n\\talign-items: center;\\n\\tmax-width: 1200px;\\n\\n\\tmargin: 0 auto;\\n}\\n\\nul,\\n#icons {\\n\\tlist-style: none;\\n\\tdisplay: flex;\\n\\tgap: 24px;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurant_project/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* Reset */\\n\\n*,\\n*::before,\\n*::after {\\n\\tbox-sizing: border-box;\\n}\\n\\n* {\\n\\tmargin: 0;\\n\\tpadding: 0;\\n\\tfont: inherit;\\n}\\n\\nhtml {\\n\\tcolor-scheme: dark light;\\n}\\n\\nbody {\\n\\tmin-height: 100vh;\\n\\tfont-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;\\n}\\n\\nimg,\\npicture,\\nsvg,\\nvideo,\\nfooter {\\n\\tdisplay: block;\\n\\tmax-width: 100%;\\n}\\n\\n/* Nav */\\nnav,\\nfooter,\\n#hero_img {\\n\\twidth: 100vw;\\n\\tpadding: 20px 40px;\\n}\\n\\n#nav_wrapper {\\n\\tdisplay: flex;\\n\\tflex-direction: colum;\\n\\tjustify-content: space-between;\\n\\talign-items: center;\\n\\tmax-width: 1200px;\\n\\n\\tmargin: 0 auto;\\n}\\n\\nul,\\n#icons {\\n\\tlist-style: none;\\n\\tdisplay: flex;\\n\\tgap: 24px;\\n}\\n\\n* {\\n\\tborder: 1px solid red;\\n}\\n\\n#main_content {\\n\\tmax-width: 1200px;\\n\\tmargin: 0 auto;\\n}\\n\\n/* Sección NUESTROS VALORES */\\n.iconValue {\\n\\twidth: 200px;\\n\\taspect-ratio: 1;\\n}\\n\\n.sectionTitle {\\n\\tfont-size: 32px;\\n\\tfont-weight: 800;\\n\\ttext-align: center;\\n\\tpadding: 16px 0;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurant_project/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n/* harmony import */ var _modules_conocenos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/conocenos.js */ \"./src/modules/conocenos.js\");\n\n\n\n\n// Load default Home page\nconst inicio = (0,_modules_home_js__WEBPACK_IMPORTED_MODULE_1__.homeContent)()\nconst conocenos = (0,_modules_conocenos_js__WEBPACK_IMPORTED_MODULE_2__.Conocenos)()\n\nconst pageContent = document.getElementById(\"content\")\npageContent.appendChild((0,_modules_home_js__WEBPACK_IMPORTED_MODULE_1__.Nav)())\npageContent.appendChild(inicio)\npageContent.appendChild((0,_modules_home_js__WEBPACK_IMPORTED_MODULE_1__.footer)())\n\n// Load content from other tabs\n\n// tab \"Conócenos\"\nconst tabConocenos = document.getElementById(\"conocenos\")\ntabConocenos.addEventListener(\"click\", () => {\n\tloadContent(conocenos)\n})\n\n// Tab Inicio\nconst tabInicio = document.getElementById(\"inicio\")\ntabInicio.addEventListener(\"click\", () => {\n\tloadContent(inicio)\n})\n\nfunction loadContent(sectionName) {\n\tconst mainContent = document.getElementById(\"main_content\")\n\tmainContent.remove()\n\n\tconst nav = document.getElementById(\"nav_wrapper\")\n\tnav.after(sectionName)\n}\n\n\n//# sourceURL=webpack://restaurant_project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n/* harmony import */ var _modules_conocenos_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/conocenos.js */ \"./src/modules/conocenos.js\");\n\n\n\n\n// Load default Home page\nconst inicio = (0,_modules_home_js__WEBPACK_IMPORTED_MODULE_1__.homeContent)()\nconst conocenos = (0,_modules_conocenos_js__WEBPACK_IMPORTED_MODULE_2__.Conocenos)()\n\nconst pageContent = document.getElementById(\"content\")\n// pageContent.appendChild(Nav())\npageContent.appendChild(conocenos)\n// pageContent.appendChild(footer())\n\n// Load content from other tabs\nconst tabConocenos = document.getElementById(\"conocenos\")\ntabConocenos.addEventListener(\"click\", () => {\n\tloadContent(conocenos)\n})\n\nconst tabInicio = document.getElementById(\"inicio\")\ntabInicio.addEventListener(\"click\", () => {\n\tloadContent(inicio)\n})\n\nfunction loadContent(sectionName) {\n\tconst mainContent = document.getElementById(\"main_content\")\n\tmainContent.remove()\n\n\tconst nav = document.getElementById(\"nav_wrapper\")\n\tnav.after(sectionName)\n}\n\n\n//# sourceURL=webpack://restaurant_project/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Conocenos\": () => (/* binding */ Conocenos)\n/* harmony export */ });\n/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilities.js */ \"./src/modules/utilities.js\");\n\n\nconst Conocenos = () => {\n\tconst valores = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tvalores.id = \"main_content\"\n\n\tconst iconFilosofia = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"i\")\n\tconst imgFilosofia = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"img\")\n\n\ticonFilosofia.appendChild(imgFilosofia)\n\timgFilosofia.src = \"/src/images/conocenos/icono_filosofia.webp\"\n\t// HeroImg.src = \"/src/images/FIKA.webp\"\n\n\tvalores.appendChild(iconFilosofia)\n\n\treturn valores\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_project/./src/modules/conocenos.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Conocenos\": () => (/* binding */ Conocenos)\n/* harmony export */ });\n/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilities.js */ \"./src/modules/utilities.js\");\n/* harmony import */ var _images_conocenos_icono_filosofia_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/conocenos/icono_filosofia.webp */ \"./src/images/conocenos/icono_filosofia.webp\");\n/* harmony import */ var _images_conocenos_icono_familia_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/conocenos/icono_familia.webp */ \"./src/images/conocenos/icono_familia.webp\");\n/* harmony import */ var _images_conocenos_icono_km_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/conocenos/icono_km.webp */ \"./src/images/conocenos/icono_km.webp\");\n/* harmony import */ var _images_conocenos_icono_eco_webp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/conocenos/icono_eco.webp */ \"./src/images/conocenos/icono_eco.webp\");\n/* harmony import */ var _images_conocenos_icono_pet_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/conocenos/icono_pet.webp */ \"./src/images/conocenos/icono_pet.webp\");\n/* harmony import */ var _images_conocenos_icono_vegan_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/conocenos/icono_vegan.webp */ \"./src/images/conocenos/icono_vegan.webp\");\n/* harmony import */ var _images_conocenos_icono_gluten_webp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/conocenos/icono_gluten.webp */ \"./src/images/conocenos/icono_gluten.webp\");\n\n\n\n\n\n\n\n\n\nconst Conocenos = () => {\n\tconst main_content = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tmain_content.id = \"main_content\"\n\n\tconst contentWrapper = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tcontentWrapper.id = \"contentWrapper\"\n\tmain_content.appendChild(contentWrapper)\n\n\tconst sectionTitle = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"H1\", \"Nuestros valores\")\n\tsectionTitle.classList.add(\"sectionTitle\")\n\tcontentWrapper.appendChild(sectionTitle)\n\n\tconst valuesContainer = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tvaluesContainer.classList.add(\"valuesContainer\")\n\tcontentWrapper.appendChild(valuesContainer)\n\n\t// VALORES\n\t// Filosofía\n\tconst filosofiaContainer = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tfilosofiaContainer.id = \"filosofiaContainer\"\n\n\tconst iconFilosofia = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_filosofia_webp__WEBPACK_IMPORTED_MODULE_1__)\n\tconst filosofiaTitle = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"h2\", \"Filosofía FIKA\")\n\tconst filosofiaText = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\n\t\t\"p\",\n\t\t\"La filosofía fika, proveniente del sueco, invita a tener un momento para ti y tomarse las cosas con calma, sea para descansar o socializar\"\n\t)\n\tfilosofiaContainer.appendChild(iconFilosofia)\n\tfilosofiaContainer.appendChild(filosofiaTitle)\n\tfilosofiaContainer.appendChild(filosofiaText)\n\n\t// Família\n\tconst familiaContainer = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tfamiliaContainer.id = \"familiaContainer\"\n\n\tconst iconFamilia = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_familia_webp__WEBPACK_IMPORTED_MODULE_2__)\n\tconst familiaTitle = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"h2\", \"Familia\")\n\tconst familiaText = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\n\t\t\"p\",\n\t\t\"Los clientes son familia y queremos transmitir este vínculo, sean pequeños o grandes, todos se tienen que sentir en casa\"\n\t)\n\tfilosofiaContainer.appendChild(iconFamilia)\n\tfilosofiaContainer.appendChild(familiaTitle)\n\tfilosofiaContainer.appendChild(familiaText)\n\n\t// KM\n\tconst kmContainer = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"div\")\n\tkmContainer.id = \"kmContainer\"\n\n\tconst iconKM = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_km_webp__WEBPACK_IMPORTED_MODULE_3__)\n\tconst kmTitle = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\"h2\", \"KM 0\")\n\tconst kmText = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.newElement)(\n\t\t\"p\",\n\t\t\"Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores \"\n\t)\n\tfilosofiaContainer.appendChild(iconKM)\n\tfilosofiaContainer.appendChild(kmTitle)\n\tfilosofiaContainer.appendChild(kmText)\n\n\tvaluesContainer.appendChild(filosofiaContainer)\n\n\treturn main_content\n}\n\n//All icons\nconst iconEco = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_eco_webp__WEBPACK_IMPORTED_MODULE_4__)\nconst iconPet = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_pet_webp__WEBPACK_IMPORTED_MODULE_5__)\nconst iconVegan = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_vegan_webp__WEBPACK_IMPORTED_MODULE_6__)\nconst iconGluten = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.iconCreation)(_images_conocenos_icono_gluten_webp__WEBPACK_IMPORTED_MODULE_7__)\n\n\n\n\n//# sourceURL=webpack://restaurant_project/./src/modules/conocenos.js?");
 
 /***/ }),
 
@@ -146,7 +146,77 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"newElement\": () => (/* binding */ newElement)\n/* harmony export */ });\nfunction newElement(element, textContent) {\n\tconst newElement = document.createElement(element)\n\tif (element == \"img\") {\n\t\tnewElement.textContent = \"\"\n\t\treturn newElement\n\t}\n\tif (textContent) {\n\t\tnewElement.textContent = textContent\n\t}\n\n\treturn newElement\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_project/./src/modules/utilities.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"iconCreation\": () => (/* binding */ iconCreation),\n/* harmony export */   \"newElement\": () => (/* binding */ newElement)\n/* harmony export */ });\nfunction newElement(element, textContent) {\n\tconst newElement = document.createElement(element)\n\tif (element == \"img\") {\n\t\tnewElement.textContent = \"\"\n\t\treturn newElement\n\t}\n\tif (textContent) {\n\t\tnewElement.textContent = textContent\n\t}\n\n\treturn newElement\n}\n\nfunction iconCreation(imageImported) {\n\tconst newImage = new Image()\n\tnewImage.src = imageImported\n\tnewImage.classList.add(\"iconValue\")\n\treturn newImage\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_project/./src/modules/utilities.js?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_eco.webp":
+/*!*********************************************!*\
+  !*** ./src/images/conocenos/icono_eco.webp ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"767d6a9e6bde7c9ef4d3.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_eco.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_familia.webp":
+/*!*************************************************!*\
+  !*** ./src/images/conocenos/icono_familia.webp ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"418c3b9ea5aa3886cc2c.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_familia.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_filosofia.webp":
+/*!***************************************************!*\
+  !*** ./src/images/conocenos/icono_filosofia.webp ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e936865ddae0f6cedf08.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_filosofia.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_gluten.webp":
+/*!************************************************!*\
+  !*** ./src/images/conocenos/icono_gluten.webp ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3aa1d2f8b50790b98865.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_gluten.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_km.webp":
+/*!********************************************!*\
+  !*** ./src/images/conocenos/icono_km.webp ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"17eef2b794ce2bf4ece0.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_km.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_pet.webp":
+/*!*********************************************!*\
+  !*** ./src/images/conocenos/icono_pet.webp ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0c9dc8395d78f7c0aae9.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_pet.webp?");
+
+/***/ }),
+
+/***/ "./src/images/conocenos/icono_vegan.webp":
+/*!***********************************************!*\
+  !*** ./src/images/conocenos/icono_vegan.webp ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c59946bae95c740d0226.webp\";\n\n//# sourceURL=webpack://restaurant_project/./src/images/conocenos/icono_vegan.webp?");
 
 /***/ })
 
@@ -201,6 +271,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +297,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

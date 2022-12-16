@@ -11,4 +11,11 @@ function newElement(element, textContent) {
 	return newElement
 }
 
-export { newElement }
+function iconCreation(imageImported) {
+	const newImage = new Image()
+	newImage.src = imageImported
+	newImage.classList.add("iconValue")
+	return newImage
+}
+
+export { newElement, iconCreation }
