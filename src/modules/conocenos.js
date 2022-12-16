@@ -7,6 +7,18 @@ import imgPet from "../images/conocenos/icono_pet.webp"
 import imgVegan from "../images/conocenos/icono_vegan.webp"
 import imgGluten from "../images/conocenos/icono_gluten.webp"
 
+function createValueContent(objectContent) {
+	const Icon = iconCreation(objectContent["img"])
+	const Title = newElement("h2", objectContent["title"])
+	const Text = newElement("p", objectContent["text"])
+
+	const parentToAppend = objectContent.parent
+
+	parentToAppend.appendChild(Icon)
+	parentToAppend.appendChild(Title)
+	parentToAppend.appendChild(Text)
+}
+
 const Conocenos = () => {
 	const main_content = newElement("div")
 	main_content.id = "main_content"
@@ -28,58 +40,46 @@ const Conocenos = () => {
 	const filosofiaContainer = newElement("div")
 	filosofiaContainer.id = "filosofiaContainer"
 
-	const iconFilosofia = iconCreation(imgFilosofia)
-	const filosofiaTitle = newElement("h2", "Filosofía FIKA")
-	const filosofiaText = newElement(
-		"p",
-		"La filosofía fika, proveniente del sueco, invita a tener un momento para ti y tomarse las cosas con calma, sea para descansar o socializar"
-	)
-	filosofiaContainer.appendChild(iconFilosofia)
-	filosofiaContainer.appendChild(filosofiaTitle)
-	filosofiaContainer.appendChild(filosofiaText)
+	const filosofiaContent = {
+		img: imgFilosofia,
+		title: "Filosofía FIKA",
+		text: "La filosofía fika, proveniente del sueco, invita a tener un momento para ti y tomarse las cosas con calma, sea para descansar o socializar",
+		parent: filosofiaContainer,
+	}
+
+	createValueContent(filosofiaContent)
 
 	// Família
-
 	const familiaContainer = newElement("div")
 	familiaContainer.id = "familiaContainer"
 
-	const iconFamilia = iconCreation(imgFamilia)
-	const familiaTitle = newElement("h2", "Familia")
-	const familiaText = newElement(
-		"p",
-		"Los clientes son familia y queremos transmitir este vínculo, sean pequeños o grandes, todos se tienen que sentir en casa"
-	)
-	familiaContainer.appendChild(iconFamilia)
-	familiaContainer.appendChild(familiaTitle)
-	familiaContainer.appendChild(familiaText)
+	const familiaContent = {
+		img: imgFamilia,
+		title: "Familia",
+		text: "Los clientes son familia y queremos transmitir este vínculo, sean pequeños o grandes, todos se tienen que sentir en casa",
+		parent: familiaContainer,
+	}
+
+	createValueContent(familiaContent)
 
 	// KM
 	const kmContainer = newElement("div")
+	kmContainer.id = "kmContainer"
+
 	const kmContent = {
-		id: "kmContainer",
 		img: imgKM,
 		title: "KM 0",
 		text: "Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores",
-		parent: "kmContainer",
+		parent: kmContainer,
 	}
 
-	createValueContent(kmContent, kmContainer)
+	createValueContent(kmContent)
 
 	valuesContainer.appendChild(filosofiaContainer)
 	valuesContainer.appendChild(familiaContainer)
 	valuesContainer.appendChild(kmContainer)
 
 	return main_content
-}
-
-function createValueContent(objectContent, parent) {
-	const Icon = iconCreation(objectContent["img"])
-	const Title = newElement("h2", objectContent["title"])
-	const Text = newElement("p", objectContent["text"])
-
-	parent.appendChild(Icon)
-	parent.appendChild(Title)
-	parent.appendChild(Text)
 }
 
 //All icons

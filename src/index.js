@@ -7,9 +7,9 @@ const inicio = homeContent()
 const conocenos = Conocenos()
 
 const pageContent = document.getElementById("content")
-// pageContent.appendChild(Nav())
+pageContent.appendChild(Nav())
 pageContent.appendChild(conocenos)
-// pageContent.appendChild(footer())
+pageContent.appendChild(footer())
 
 // Load content from other tabs
 const tabConocenos = document.getElementById("conocenos")
