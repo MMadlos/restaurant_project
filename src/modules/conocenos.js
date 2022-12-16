@@ -39,6 +39,7 @@ const Conocenos = () => {
 	filosofiaContainer.appendChild(filosofiaText)
 
 	// Família
+
 	const familiaContainer = newElement("div")
 	familiaContainer.id = "familiaContainer"
 
@@ -48,27 +49,34 @@ const Conocenos = () => {
 		"p",
 		"Los clientes son familia y queremos transmitir este vínculo, sean pequeños o grandes, todos se tienen que sentir en casa"
 	)
-	filosofiaContainer.appendChild(iconFamilia)
-	filosofiaContainer.appendChild(familiaTitle)
-	filosofiaContainer.appendChild(familiaText)
+	familiaContainer.appendChild(iconFamilia)
+	familiaContainer.appendChild(familiaTitle)
+	familiaContainer.appendChild(familiaText)
 
 	// KM
 	const kmContainer = newElement("div")
 	kmContainer.id = "kmContainer"
 
-	const iconKM = iconCreation(imgKM)
-	const kmTitle = newElement("h2", "KM 0")
-	const kmText = newElement(
-		"p",
-		"Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores "
-	)
-	filosofiaContainer.appendChild(iconKM)
-	filosofiaContainer.appendChild(kmTitle)
-	filosofiaContainer.appendChild(kmText)
+	const kmTitle = "KM 0"
+	const kmText = "Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores"
+
+	createValueContent(imgKM, kmTitle, kmText, kmContainer)
 
 	valuesContainer.appendChild(filosofiaContainer)
+	valuesContainer.appendChild(familiaContainer)
+	valuesContainer.appendChild(kmContainer)
 
 	return main_content
+}
+
+function createValueContent(img, title, text, parent) {
+	const Icon = iconCreation(img)
+	const Title = newElement("h2", title)
+	const Text = newElement("p", text)
+
+	parent.appendChild(Icon)
+	parent.appendChild(Title)
+	parent.appendChild(Text)
 }
 
 //All icons
