@@ -34,7 +34,7 @@ const allValuesContent = {
 		text: "A nuestra familia no pueden faltar los más peludos, aquí siempre tendrán un lugar para disfrutar GUAU!",
 	},
 	vegan: {
-		img: imgVegan,
+		img: imgGluten,
 		title: "Para todos",
 		text: "Nuestro sello de calidad es para todos los que quieran disfrutar de nuestro producto, con opciones veganas y sin gluten",
 	},

@@ -15,11 +15,18 @@ pageContent.appendChild(footer())
 const tabConocenos = document.getElementById("conocenos")
 tabConocenos.addEventListener("click", () => {
 	loadContent(conocenos)
+
+	tabInicio.classList.remove("currentSection")
+	tabConocenos.classList.add("currentSection")
 })
 
 const tabInicio = document.getElementById("inicio")
+tabInicio.classList.add("currentSection")
 tabInicio.addEventListener("click", () => {
 	loadContent(inicio)
+
+	tabInicio.classList.add("currentSection")
+	tabConocenos.classList.remove("currentSection")
 })
 
 function loadContent(sectionName) {

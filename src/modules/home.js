@@ -37,10 +37,11 @@ const Nav = () => {
 const footer = () => {
 	const footer = newElement("footer")
 
-	footer.appendChild(newElement("p", "Contacto"))
-	footer.appendChild(newElement("p", "Calle Rubén Darío 36, 08030, Barcelona"))
-	footer.appendChild(newElement("p", "fikacoffeecorner@gmail.com"))
-	footer.appendChild(newElement("p", "fikacoffeebcn"))
+	footer.appendChild(newElement("p", "Contacto")).classList.add("footerTitle")
+	footer.appendChild(newElement("p", "+34 623 38 75 88")).setAttribute("id", "footerPhone")
+	footer.appendChild(newElement("p", "Calle Rubén Darío 36, 08030, Barcelona")).setAttribute("id", "footerAddress")
+	footer.appendChild(newElement("p", "fikacoffeecorner@gmail.com")).setAttribute("id", "footerEmail")
+	footer.appendChild(newElement("p", "fikacoffeebcn")).setAttribute("id", "footerInsta")
 
 	return footer
 }
