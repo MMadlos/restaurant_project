@@ -12,32 +12,32 @@ const allValuesContent = {
 		img: imgFilosofia,
 		title: "Filosofía FIKA",
 		text: "La filosofía fika, proveniente del sueco, invita a tener un momento para ti y tomarse las cosas con calma, sea para descansar o socializar",
-		// parent: filosofiaContainer,
 	},
 	familia: {
 		img: imgFamilia,
 		title: "Familia",
 		text: "Los clientes son familia y queremos transmitir este vínculo, sean pequeños o grandes, todos se tienen que sentir en casa",
-		// parent: familiaContainer,
 	},
 	km: {
 		img: imgKM,
 		title: "KM 0",
 		text: "Desde FIKA nos hemos comprometido a trabajar con el comercio de proximidad y crecer de la mano de nuestros clientes/proveedores",
-		// parent: kmContainer,
 	},
-}
-
-function createValueContent(objectContent, parent) {
-	const Icon = iconCreation(allValuesContent[objectContent]["img"])
-	const Title = newElement("h2", allValuesContent[objectContent]["title"])
-	const Text = newElement("p", allValuesContent[objectContent]["text"])
-
-	// const parentToAppend = allValuesContent[objectContent][parent]
-
-	parent.appendChild(Icon)
-	parent.appendChild(Title)
-	parent.appendChild(Text)
+	eco: {
+		img: imgEco,
+		title: "Eco-sostenible",
+		text: "Ponemos nuestro granito de arena para reducir los residuos de plástico en FIKA y ayudar a mantener limpio el medio ambiente",
+	},
+	pet: {
+		img: imgPet,
+		title: "Pet friendly",
+		text: "A nuestra familia no pueden faltar los más peludos, aquí siempre tendrán un lugar para disfrutar GUAU!",
+	},
+	vegan: {
+		img: imgVegan,
+		title: "Para todos",
+		text: "Nuestro sello de calidad es para todos los que quieran disfrutar de nuestro producto, con opciones veganas y sin gluten",
+	},
 }
 
 const Conocenos = () => {
@@ -56,31 +56,26 @@ const Conocenos = () => {
 	valuesContainer.classList.add("valuesContainer")
 	contentWrapper.appendChild(valuesContainer)
 
-	// VALORES
-	const filosofiaContainer = newElement("div")
-	filosofiaContainer.id = "filosofiaContainer"
-	createValueContent("filosofia", filosofiaContainer)
+	function createValueContent(objectContent) {
+		const Container = newElement("div")
+		Container.id = `${objectContent}Container`
 
-	const familiaContainer = newElement("div")
-	familiaContainer.id = "familiaContainer"
-	createValueContent("familia", familiaContainer)
+		const Icon = iconCreation(allValuesContent[objectContent]["img"])
+		const Title = newElement("h2", allValuesContent[objectContent]["title"])
+		const Text = newElement("p", allValuesContent[objectContent]["text"])
 
-	// // KM
-	const kmContainer = newElement("div")
-	kmContainer.id = "kmContainer"
-	createValueContent("km", kmContainer)
+		Container.appendChild(Icon)
+		Container.appendChild(Title)
+		Container.appendChild(Text)
 
-	valuesContainer.appendChild(filosofiaContainer)
-	valuesContainer.appendChild(familiaContainer)
-	valuesContainer.appendChild(kmContainer)
+		valuesContainer.appendChild(Container)
+	}
+
+	Object.keys(allValuesContent).forEach((key) => {
+		createValueContent(key)
+	})
 
 	return main_content
 }
-
-//All icons
-const iconEco = iconCreation(imgEco)
-const iconPet = iconCreation(imgPet)
-const iconVegan = iconCreation(imgVegan)
-const iconGluten = iconCreation(imgGluten)
 
 export { Conocenos }
