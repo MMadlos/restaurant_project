@@ -66,6 +66,10 @@ const Carta = () => {
 			itemName.classList.add("itemName")
 			namePriceContainer.appendChild(itemName)
 
+			// const dots = newElement("div")
+			// dots.classList.add("dots")
+			// namePriceContainer.appendChild(dots)
+
 			if (items.description !== "") {
 				const itemDescription = newElement("p", items.description)
 				itemDescription.classList.add("itemDescription")
