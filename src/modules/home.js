@@ -7,6 +7,7 @@ const Nav = () => {
 	const logo = newElement("img")
 	logo.src = "/src/images/logo.png"
 	logo.alt = "logo"
+	logo.id = "logo"
 
 	const ul = newElement("ul")
 

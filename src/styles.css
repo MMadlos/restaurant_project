@@ -74,6 +74,7 @@ ul > li > a:hover {
 #main_content {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 80px 0;
 }
 
 .currentSection {
@@ -110,7 +111,7 @@ footer {
 }
 
 .sectionTitle {
-	font-size: 32px;
+	font-size: 40px;
 	font-weight: 800;
 	text-align: center;
 	margin-bottom: 48px;
@@ -129,4 +130,56 @@ footer {
 	font-size: 18px;
 	text-transform: uppercase;
 	padding: 24px 0;
+}
+
+/* Carta */
+
+.contenedorCarta {
+	border: 2px solid black;
+	padding: 48px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contenedorCarta > h2 {
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.contenedorCarta > p {
+	font-style: italic;
+}
+
+.listaContainer {
+	margin-top: 32px;
+}
+
+.itemContainer {
+	margin-bottom: 16px;
+}
+
+.namePriceContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 24px;
+}
+
+.itemDescription {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.priceContainer {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	width: 96px;
+}
+
+.iconVegan {
+	width: 32px;
+	margin: 0;
 }
