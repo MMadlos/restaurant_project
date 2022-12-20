@@ -10,49 +10,41 @@ const carta = Carta()
 
 const pageContent = document.getElementById("content")
 pageContent.appendChild(Nav())
-pageContent.appendChild(carta)
+pageContent.appendChild(inicio)
 pageContent.appendChild(footer())
 
-// Load content from other tabs
-const tabCarta = document.getElementById("carta")
-tabCarta.addEventListener("click", () => {
-	loadContent(carta)
-	tabCarta.classList.add("currentSection")
-
-	tabInicio.classList.remove("currentSection")
-	tabConocenos.classList.remove("currentSection")
-})
-
-const tabConocenos = document.getElementById("conocenos")
-tabConocenos.addEventListener("click", () => {
-	loadContent(conocenos)
-
-	tabInicio.classList.remove("currentSection")
-	tabConocenos.classList.add("currentSection")
-})
-
+// Tabs & logo
 const tabInicio = document.getElementById("inicio")
 tabInicio.classList.add("currentSection")
-tabInicio.addEventListener("click", () => {
-	loadInicio()
-})
-
+const tabCarta = document.getElementById("carta")
+const tabConocenos = document.getElementById("conocenos")
 const logo = document.getElementById("logo")
-logo.addEventListener("click", () => {
-	loadInicio()
-})
+const clickableItems = [logo, tabInicio, tabCarta, tabConocenos]
 
-function loadInicio() {
-	loadContent(inicio)
+// Main Content
+const navSection = document.getElementById("nav_wrapper")
 
-	tabInicio.classList.add("currentSection")
-	tabConocenos.classList.remove("currentSection")
-}
+clickableItems.forEach((item) =>
+	item.addEventListener("click", () => {
+		console.log(item)
+		const currentSectionClass = document.querySelector(".currentSection")
+		currentSectionClass.classList.remove("currentSection")
 
-function loadContent(sectionName) {
-	const mainContent = document.getElementById("main_content")
-	mainContent.remove()
+		item === logo ? tabInicio.classList.add("currentSection") : item.classList.add("currentSection")
 
-	const nav = document.getElementById("nav_wrapper")
-	nav.after(sectionName)
-}
+		const mainContent = document.getElementById("main_content")
+		mainContent.remove()
+
+		if (item === tabCarta) {
+			navSection.after(carta)
+		}
+
+		if (item === tabConocenos) {
+			navSection.after(conocenos)
+		}
+
+		if (item === tabInicio || item === logo) {
+			navSection.after(inicio)
+		}
+	})
+)
